@@ -5,7 +5,7 @@ import Home from "./pages/Home.jsx"
 
 function App() {
   return (
-    <Box bg="gray.100" h="100vh">
+    <Box bg="gray.100">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

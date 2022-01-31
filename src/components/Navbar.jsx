@@ -1,14 +1,11 @@
-import { Button, ButtonGroup } from "@chakra-ui/button";
-import { Image } from "@chakra-ui/image";
-import { Box, Flex } from "@chakra-ui/layout";
-import { IconButton } from "@chakra-ui/react";
+import { Box, Flex, IconButton, Image, Button, ButtonGroup } from "@chakra-ui/react";
 import { MoonIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
 import profile from "../assets/profile-image.jpg";
 
 const Navbar = () => {
   return (
-    <Box bg="white" p={3}>
+    <Box bg="white" p={3} position="sticky" zIndex="99">
       <Flex justifyContent="space-evenly" maxW="7xl" mx="auto">
         <Box>
           <Link to="/">
