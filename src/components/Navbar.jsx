@@ -1,14 +1,17 @@
 import { Box, Flex, IconButton, Image, Button, ButtonGroup } from "@chakra-ui/react";
-import { MoonIcon } from "@chakra-ui/icons";
-import { Link } from "react-router-dom";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { useColorMode, useColorModeValue } from "@chakra-ui/color-mode";
 import profile from "../assets/profile-image.jpg";
 
 const Navbar = () => {
+  const { colorMode, toggleColorMode } = useColorMode()
+  const bg = useColorModeValue("white", "#242d3d")
+
+
   return (
-    <Box bg="white" p={3} position="sticky" zIndex="99">
+    <Box bg={bg} p={3}>
       <Flex justifyContent="space-evenly" maxW="7xl" mx="auto">
         <Box>
-          <Link to="/">
             <Image
               src={profile}
               w={9}
@@ -16,24 +19,23 @@ const Navbar = () => {
               rounded="full"
               objectFit="contain"
             />
-          </Link>
         </Box>
 
         <ButtonGroup spacing={{ base: 0, md: 6 }}>
           <Button variant="ghost">
-            <Link to="/about">About</Link>
+            About
           </Button>
 
           <Button variant="ghost">
-            <Link to="/tools">Tools</Link>
+            Tools
           </Button>
 
           <Button variant="ghost">
-            <Link to="/books">Books</Link>
+            Projects
           </Button>
         </ButtonGroup>
 
-        <IconButton icon={<MoonIcon />} aria-label="Toggle Dark Mode" />
+        <IconButton icon={ colorMode === "light" ? <MoonIcon /> : <SunIcon />} aria-label="Toggle Dark Mode" onClick={toggleColorMode} />
       </Flex>
     </Box>
   );

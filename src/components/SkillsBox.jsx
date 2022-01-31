@@ -7,7 +7,7 @@ import Skill from "./Skill";
 const SkillsBox = () => {
   return (
     <VStack alignItems="flex-start" spacing={8}>
-      <Heading as="h2" fontSize="3xl" fontWeight="500">
+      <Heading as="h2" fontSize={{ base: "2xl", md: "3xl"}} fontWeight="500">
         💻 Stacks & Technologies
       </Heading>
       

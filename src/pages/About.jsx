@@ -1,13 +1,12 @@
-import { Box, Heading, Text, VStack, Stack, Badge } from "@chakra-ui/react";
-import React from "react";
+import { Box, Heading, Text, Stack, Badge } from "@chakra-ui/react";
 
 const About = () => {
   return (
     <Box maxW="3xl" mx="auto" mt={10} p={4}>
-      <Heading as="h2" fontSize="4xl" fontWeight="500" mb={4}>
+      <Heading as="h2" fontSize={{ base: "2xl", md: "4xl"}} fontWeight="500" mb={4}>
         About
       </Heading>
-      <Text fontSize="22px">
+      <Text fontSize={{ base: "18px", md: "22px"}}>
         After finishing High School, I decided to join the Front-End Web
         Development Academy in Brainster. For those 8 months, I focused more on
         front-end technologies because I wanted to become more proficient and
