@@ -8,7 +8,7 @@ const Projects = () => {
   const border = useColorModeValue("gray.100", "#242d3d")
 
   return (
-    <Box maxW="3xl" mx="auto" mt={20} p={3}>
+    <Box maxW="3xl" mx="auto" mt={20} p={3} id="projects">
       <Heading as="h2" fontSize={{ base: "2xl", md: "3xl"}} fontWeight="500" mb={5}>
         💻 Projects
       </Heading>

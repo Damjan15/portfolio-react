@@ -4,7 +4,7 @@ import ToolBox from "../components/ToolBox";
 
 const Tools = () => {
   return (
-    <Box mt={20} maxW="3xl" mx="auto" p={3}>
+    <Box mt={20} maxW="3xl" mx="auto" p={3} id="tools">
       <VStack alignItems="flex-start" spacing={3} mb={5}>
         <Heading as="h2" fontSize={{ base: "2xl", md: "3xl"}}>
           🛠

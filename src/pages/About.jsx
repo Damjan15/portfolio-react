@@ -2,7 +2,7 @@ import { Box, Heading, Text, Stack, Badge } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <Box maxW="3xl" mx="auto" mt={10} p={4}>
+    <Box maxW="3xl" mx="auto" mt={10} p={4} id="about">
       <Heading as="h2" fontSize={{ base: "2xl", md: "4xl"}} fontWeight="500" mb={4}>
         About
       </Heading>

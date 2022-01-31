@@ -9,9 +9,13 @@ const IntroBox = () => {
           <Text fontSize={{ base: "18px", md: "23px"}}>I’m a full stack developer, and cyber security enthusiast. I’m born and raised in Macedonia. I finished my academy for Front-End Development in 2020, and I had a chance to learn back-end technologies and work with them on my first job. </Text>
 
           <ButtonGroup>
-            <Button colorScheme="blue" leftIcon={<EmailIcon />}>Send me an email</Button>
+            <Button colorScheme="blue" leftIcon={<EmailIcon />}>
+              <Link href="mailto:stamenovdamjan20@gmail.com">
+              Send me an email
+              </Link>
+              </Button>
             <Button colorScheme="blue" leftIcon={<AiFillLinkedin />} >
-              <Link href="www.linkedin.com" _hover={{ textDecor: "none"}}>LinkedIn</Link>
+              <Link href="https://www.linkedin.com/in/damjan-stamenov-a424951b8" _hover={{ textDecor: "none"}} target="_blank">LinkedIn</Link>
             </Button>
           </ButtonGroup>
       </VStack>
