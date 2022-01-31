@@ -1,9 +1,8 @@
-import { Button } from "@chakra-ui/button";
-import { Box, Heading, Text, VStack } from "@chakra-ui/layout";
+import { Box, Heading, Text, VStack, Button } from "@chakra-ui/react";
 
 const ProjectsBox = () => {
   return <Box>
-      <Heading as="h2" fontSize="3xl" fontWeight="500" mb={4}>Projects</Heading>
+      <Heading as="h2" fontSize="3xl" fontWeight="500" mb={4}>💻 Projects</Heading>
 
       <VStack bg="white" p={5} border="1px solid gray.100" rounded="md" spacing={5}>
           <Heading as="h3" fontSize="xl">Coming Soon...</Heading>
